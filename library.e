@@ -32,6 +32,7 @@ feature
 		require
 			has_patron (p)
 			has_branch (lb)
+			b.is_available
 		do -- Future implementation
 		ensure
 			book_is_on_hold (b, p, lb)
@@ -54,6 +55,6 @@ feature
 
 	add_book (b: BOOK)
 		do
-			
+
 		end
 end
