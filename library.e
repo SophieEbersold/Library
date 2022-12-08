@@ -23,19 +23,9 @@ feature
 
 --	books_catalogue: CATALOGUE
 
-	book_is_on_hold (b: BOOK; p: PATRON; lb: LIBRARY_BRANCH): BOOLEAN
+	book_is_on_hold (b: BOOK; p: PATRON): BOOLEAN
 		do
 
-		end
-
-	place_book_on_hold (b: BOOK; p: PATRON; lb: LIBRARY_BRANCH)
-		require
-			has_patron (p)
-			has_branch (lb)
-			b.is_available
-		do -- Future implementation
-		ensure
-			book_is_on_hold (b, p, lb)
 		end
 
 	has_patron (p: PATRON): BOOLEAN
@@ -54,6 +44,29 @@ feature
 		end
 
 	add_book (b: BOOK)
+		do
+
+		end
+
+	place_book_on_hold(b: BOOK; p: PATRON)
+		require
+			has_patron(p)
+			has_book(b)
+		do
+			if hold_is_allowed(b, p) then p.place_hold(b) end
+		end
+
+	has_book(b: BOOK): BOOLEAN
+		do
+
+		end
+
+	hold_is_allowed(b: BOOK; p: PATRON): BOOLEAN
+		do
+
+		end
+
+	book_is_checked_out(p: PATRON; b:BOOK): BOOLEAN
 		do
 
 		end
