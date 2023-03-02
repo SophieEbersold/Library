@@ -15,7 +15,7 @@ ifdef::pdf-backend[]
 :method: PEGS
 endif::[]
 
-= {title}
+= {Library Manafemet System Specification}
 {author},{email}
 {version} -- {localdate}
 
@@ -35,6 +35,7 @@ endif::[]
 :Handbook:  <<Handbook, Handbook>>
 // PERSONS ENTRIES
 :jmb: https://jmbruel.netlify.app[J.-M. Bruel]
+:se: https://www.irit.fr/~Sophie.Ebersold[S. Ebersold]
 
 
 [NOTE]
@@ -73,11 +74,24 @@ toc::[]
 == Goals
 
 === G.1 Context and overall objectives
-
+The purpose of this project is to provide a Library management Sytem
+The system will be used by libraries to improve the work of librarians and library staff on the one hand, and the search for books by users on the other.
 //---- Requirement
 [[g1-mainGoal]]
 `{counter:g1}`
-Exemple of numbered requirement.
+The system provides books catalogue and information to members and helps them decide on the books to borrow from the library.
+[[g1-mainGoal]]
+`{counter:g1}` 
+The Librarian keeps the books catalogue updated all the time so that the members get the updated information at any time.
+[[g1-mainGoal]]
+`{counter:g1}` 
+One of the goals of this project is to provide an easy reservation system using computers.
+[[g1-mainGoal]]
+`{counter:g1}`
+The system manages the borrowing system
+[[g1-mainGoal]]
+`{counter:g1}` 
+One of the objectives of the project is to provide a user-friendly digital environment for both librarians and library members.
 //---- 
 
 === G.2 Current situation
@@ -138,16 +152,32 @@ Needs::
 
 === E.1 Glossary
 
-Example of terms definition.
-
 [[e1-terms]]
 ==== `{counter:e1}` Terms
 
 [[companion]]
-{companion}:: The _system_ to be developed: the companion book of <<Handbook>>. Current version available {companionURL}[here].
+{companion}:: the companion book of <<Handbook>>. Current version available {companionURL}[here].
 
 [[Handbook]]
 {Handbook}:: The book, entitled "Handbook of requirements and business analysis", written by Bertrand Meyer (see PDF {HandbookPDF}[here]), and for which the <<companion>> serves as complementary material.
+
+[[Library]]
+{Library}:: The _system_ to be developed: the library management system
+
+[[Book]]
+{Book}:: The first item of interest being the item that will be added, removed, put on hold, borrowed, returned 
+
+[[Librarian]]
+{Librarian}:: User of the suystem which will have the role of librarian 
+
+[[Member]]
+{Member}:: User of the suystem whioch will have the role of Member 
+
+
+.TBD
+[%collapsible]
+[[Recommandations]]
+{Recommandations}:: 
 
 === E.2 Components
 
@@ -183,7 +213,13 @@ Example of terms definition.
 
 === P.1 Roles and personnel
 
-{emptysec}
+[[r1-Roles]]
+`{counter:r1}`
+Librarian
+[[r1-Roles]]
+`{counter:r1}`
+Member
+
 
 === P.2 Imposed technical choices
 
