@@ -15,7 +15,7 @@ ifdef::pdf-backend[]
 :method: PEGS
 endif::[]
 
-= {Library Manafemet System Specification}
+= {Library Management System Specification}
 {author},{email}
 {version} -- {localdate}
 
